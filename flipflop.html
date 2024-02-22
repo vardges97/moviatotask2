@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: bisque;
+    }
+
+
+    ul{
+        font-size: 30px;
+    }
+
+</style>
+</head>
+<body>
+
+<p>Click the button to swap the text </p>
+
+<p><button onclick="myFunction()">Click Me</button></p>
+
+<div id="myDIV">Hello</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Goodbye";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+</script>
+
+</body>
